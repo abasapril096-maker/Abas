@@ -1,1 +1,137 @@
 Website for Life Motivation 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Life Motivation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Header -->
+    <header class="header">
+        <h1>Life Motivation</h1>
+        <p>Inspiring you to move forward every day</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="nav">
+        <a href="#">Home</a>
+        <a href="#">Quotes</a>
+        <a href="#">Stories</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main">
+        <h2>Believe in Yourself</h2>
+        <p>
+            Life is full of challenges, but every challenge is an opportunity
+            to grow stronger. Believe in yourself even when things feel hard.
+        </p>
+
+        <div class="highlight">
+            <h3>Motivation of the Day</h3>
+            <p>
+                “Your life does not get better by chance, it gets better by change.”
+            </p>
+        </div>
+    </main>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <h2>Quick Motivation</h2>
+        <ul>
+            <li>Stay positive</li>
+            <li>Never give up</li>
+            <li>Trust the process</li>
+            <li>Keep moving forward</li>
+        </ul>
+    </aside>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Keep Inspiring Yourself</p>
+    </footer>
+
+</div>
+
+</body>
+</html>
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Grid Container */
+.container {
+    display: grid;
+    grid-template-columns: 3fr 1fr; /* main + sidebar */
+    grid-template-rows: auto auto 1fr auto;
+    gap: 15px;
+    padding: 20px;
+}
+
+/* Header */
+.header {
+    grid-column: 1 / 3;
+    background-color: #2c3e50;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+/* Navigation Bar */
+.nav {
+    grid-column: 1 / 3;
+    background-color: #34495e;
+    padding: 15px;
+    text-align: center;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+/* Main Content */
+.main {
+    background-color: white;
+    padding: 20px;
+}
+
+/* Highlight section */
+.highlight {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #eaf2f8;
+    border-left: 5px solid #3498db;
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: #dfe6e9;
+    padding: 20px;
+}
+
+/* Footer */
+.footer {
+    grid-column: 1 / 3;
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
